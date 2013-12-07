@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  cliente: 
+  impuestos_periodo: 
+  recibo: 
+  cliente_avisado: false
+  vencimiento: 2013-11-23
+  fecha_pago: 2013-11-23
+  importe: 9.99
+  notas: MyText
+
+two:
+  cliente: 
+  impuestos_periodo: 
+  recibo: 
+  cliente_avisado: false
+  vencimiento: 2013-11-23
+  fecha_pago: 2013-11-23
+  importe: 9.99
+  notas: MyText

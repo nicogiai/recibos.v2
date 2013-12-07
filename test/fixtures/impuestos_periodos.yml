@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  periodo: 
+  impuesto: 
+  vencimiento0: 2013-11-23
+  vencimiento1: 2013-11-23
+  vencimiento2: 2013-11-23
+  vencimiento3: 2013-11-23
+  vencimiento4: 2013-11-23
+  vencimiento5: 2013-11-23
+  vencimiento6: 2013-11-23
+  vencimiento7: 2013-11-23
+  vencimiento8: 2013-11-23
+  vencimiento9: 2013-11-23
+  importe: 9.99
+
+two:
+  periodo: 
+  impuesto: 
+  vencimiento0: 2013-11-23
+  vencimiento1: 2013-11-23
+  vencimiento2: 2013-11-23
+  vencimiento3: 2013-11-23
+  vencimiento4: 2013-11-23
+  vencimiento5: 2013-11-23
+  vencimiento6: 2013-11-23
+  vencimiento7: 2013-11-23
+  vencimiento8: 2013-11-23
+  vencimiento9: 2013-11-23
+  importe: 9.99

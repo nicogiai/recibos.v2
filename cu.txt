@@ -1,0 +1,60 @@
+Casos de uso
+
+Admin:
+-crea clientes
+-asigna impuestos a clientes
+-crea periodos
+-genera historico
+
+No admin:
+-edita cliente
+-edita importe de historico (solo no pago, no recibo)
+-crea recibos
+-crea caja diaria
+-ver pagos
+
+
+PAGOS
+se obtiene una lista de historico con los impuestos de la fecha.
+por cada impuesto a pagar, se ofrece opciones de lugar de pago (se marca la default).
+se hace el càlculo automàtico del total por cada lugar de pago.
+
+
+
+
+NUEVO PERIODO
+1. Crear periodo
+2. Asignar impuestos y vencimiento al periodo
+   a. Se toma el dia default del impuesto
+
+      vencimiento_a = (dia default/mes inicio periodo/año inicio periodo)
+      vencimiento_b = (dia default/mes fin periodo/año fin periodo)
+
+      Si ((vencimiento_a) > (dia inicio periodo/mes inicio periodo/año inicio periodo)) &&
+         ((vencimiento_a) < (dia fin periodo/mes fin periodo/año fin periodo)) entonces
+	  vencimiento del impuesto es vencimiento_a
+      else
+          vencimiento del impuesto es vencimiento_b
+
+   b. Si el impuesto tiene un importe default, entonces se copia a "impuestos_periodos".
+
+VER PERIODO
+-Permite ver periodo e impuestos asociados
+-Permite además generar el histórico
+
+GENERAR HISTORICO
+1. carga "historico_impuestos" con todos los clientes que tienen asociado los impuestos del periodo.
+2. dependiendo de la terminación del cuit del cliente, se carga el vencimiento correspondiente.
+3. dependiendo de si el impuesto tiene un importe default para el cliente, se carga ese importe.
+4. cliente_avisado se pone en FALSE.
+
+
+DE UN CLIENTE se puede
+-ver datos
+-ver impuestos
+-ver historico (general o por periodo)
+-ver pagos pendientes
+-ver recibos
+-cargar impuestos del periodo aun sin pago
+
+
